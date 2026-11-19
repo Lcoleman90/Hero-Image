@@ -48,28 +48,50 @@ nav a:hover {
      2. The actual photo
      The dark gradient helps make the white text easier to read. */
   background-image:
-    linear-gradient(rgba(0, 0, 0, 1), rgba(0, 0, 0, 1)),
-    url("");
+    linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url("images/cats.jpg");
+
+    min-height: 25vh;
+    padding: 1.5rem;
   
-}
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 
 .hero-content {
   text-align: center;
   color: white;
+  max-width:700px
+  margin-bottom: 1.5rem;
 }
 
 .hero-content h2 {
+  font-size: 300%
 
 }
 
 .hero-content p {
-
+  font-size: 120%;
+  margin-bottom: 1.5rem;
 }
 
 .hero-button {
+  display: inline-block;
+  background-color: rgb(241, 8, 86);
+  color: white;
+  text-decoration:none;
+  font-weight: bold;
+  padding: 1rem 2rem;
+  border-radius: 0.50rem;
 
 }
-
+.hero-button:hover{
+  background-color:#741a23;
+}
 
 /* MAIN CONTENT SECTION
    ========================= */
@@ -119,14 +141,17 @@ footer p {
   }
 
   .hero {
+    min-height: 15vh;
     
   }
 
   .hero-content h2 {
+    font-size: 200%;
     
   }
 
   .hero-content p {
+    font-size: 100%;
     
   }
 }
